@@ -1325,29 +1325,34 @@ private fun SessionClockDialog(
     isDark: Boolean,
     onDismiss: () -> Unit
 ) {
-    val accent = accentColor(isDark)
-    val muted = mutedColor(isDark)
+    val accent = Color(0xFF7C3AED)
+    val muted = Color(0xFF666678)
+    val textColor = Color(0xFF18181B)
 
-    // Live countdown inside the popup
+    // The popup is intentionally white in both app themes.
     var now by remember { mutableLongStateOf(System.currentTimeMillis()) }
-    LaunchedEffect(Unit) {
-        while (true) {
+    var initialRemaining by remember { mutableLongStateOf((endMillis - now).coerceAtLeast(1L)) }
+    LaunchedEffect(endMillis) {
+        now = System.currentTimeMillis()
+        initialRemaining = (endMillis - now).coerceAtLeast(1L)
+        while (now < endMillis) {
+            delay(1000L)
             now = System.currentTimeMillis()
-            delay(1000)
         }
     }
     val remaining = (endMillis - now).coerceAtLeast(0L)
+    val progress = (remaining.toFloat() / initialRemaining.toFloat()).coerceIn(0f, 1f)
+    val countdown = formatCountdownHms(remaining)
 
-    val clock = Calendar.getInstance().apply { timeInMillis = endMillis }
-    val hour = clock.get(Calendar.HOUR_OF_DAY)
-    val minute = clock.get(Calendar.MINUTE)
-
-    // The popup uses a white surface in both themes.
-    Dialog(onDismissRequest = onDismiss, properties = DialogProperties(usePlatformDefaultWidth = false)) {
+    Dialog(
+        onDismissRequest = onDismiss,
+        properties = DialogProperties(usePlatformDefaultWidth = false)
+    ) {
         Surface(
             modifier = Modifier.fillMaxWidth(0.88f),
             shape = RoundedCornerShape(28.dp),
             color = Color.White,
+            shadowElevation = 8.dp,
             tonalElevation = 0.dp
         ) {
             Column(
@@ -1355,92 +1360,136 @@ private fun SessionClockDialog(
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
                 Text(
-                    "BLOCK ENDS", color = accent, fontSize = 12.sp,
-                    fontWeight = FontWeight.Bold, letterSpacing = 1.5.sp, fontFamily = Poppins
+                    text = "FOCUS SESSION",
+                    color = accent,
+                    fontSize = 12.sp,
+                    fontWeight = FontWeight.Bold,
+                    letterSpacing = 1.5.sp,
+                    fontFamily = Poppins
                 )
-                Spacer(Modifier.height(4.dp))
+                Spacer(Modifier.height(8.dp))
                 Text(
-                    appLabel, color = Color(0xFF1B1B27), fontSize = 16.sp,
-                    fontWeight = FontWeight.SemiBold, fontFamily = Poppins,
-                    maxLines = 1, overflow = TextOverflow.Ellipsis
+                    text = appLabel,
+                    color = textColor,
+                    fontSize = 17.sp,
+                    fontWeight = FontWeight.SemiBold,
+                    fontFamily = Poppins,
+                    maxLines = 1,
+                    overflow = TextOverflow.Ellipsis
                 )
-                Spacer(Modifier.height(10.dp))
-                Text(
-                    formatTime(endMillis), color = Color(0xFF18181B), fontSize = 32.sp,
-                    fontWeight = FontWeight.Bold, fontFamily = Poppins
-                )
-                Text(
-                    formatDate(endMillis), color = Color(0xFF666678), fontSize = 13.sp, fontFamily = Poppins
-                )
-                Spacer(Modifier.height(18.dp))
-                Canvas(modifier = Modifier.size(200.dp)) {
-                    val center = Offset(size.width / 2f, size.height / 2f)
-                    val radius = size.minDimension * 0.44f
-                    drawCircle(color = Color(0xFFFFF1F2), radius = radius, center = center)
-                    drawCircle(
-                        color = accent.copy(alpha = 0.30f), radius = radius, center = center,
-                        style = Stroke(width = 2.dp.toPx())
-                    )
-                    for (i in 0 until 12) {
-                        rotate(i * 30f, pivot = center) {
-                            val tickStart = Offset(center.x, center.y - radius * 0.86f)
-                            val tickEnd = Offset(center.x, center.y - radius * (if (i % 3 == 0) 0.72f else 0.78f))
-                            drawLine(
-                                color = if (i % 3 == 0) accent else muted.copy(alpha = 0.65f),
-                                start = tickStart,
-                                end = tickEnd,
-                                strokeWidth = if (i % 3 == 0) 3.dp.toPx() else 1.5.dp.toPx()
+                Spacer(Modifier.height(20.dp))
+
+                // Circular countdown ring with a live HH:MM:SS timer in the center.
+                Box(
+                    modifier = Modifier.size(230.dp),
+                    contentAlignment = Alignment.Center
+                ) {
+                    Canvas(modifier = Modifier.fillMaxSize()) {
+                        val strokeWidth = 13.dp.toPx()
+                        val inset = strokeWidth / 2f
+                        val arcSize = androidx.compose.ui.geometry.Size(
+                            size.width - strokeWidth,
+                            size.height - strokeWidth
+                        )
+                        val topLeft = Offset(inset, inset)
+                        drawArc(
+                            color = Color(0xFFF1EAFE),
+                            startAngle = -90f,
+                            sweepAngle = 360f,
+                            useCenter = false,
+                            topLeft = topLeft,
+                            size = arcSize,
+                            style = Stroke(width = strokeWidth)
+                        )
+                        drawArc(
+                            color = if (remaining <= 60_000L) Color(0xFFEF4444) else accent,
+                            startAngle = -90f,
+                            sweepAngle = 360f * progress,
+                            useCenter = false,
+                            topLeft = topLeft,
+                            size = arcSize,
+                            style = Stroke(
+                                width = strokeWidth,
+                                cap = androidx.compose.ui.graphics.StrokeCap.Round
                             )
-                        }
+                        )
                     }
-                    val hourAngle = ((hour % 12) + minute / 60f) * 30f - 90f
-                    val minuteAngle = minute * 6f - 90f
-                    val hourRad = Math.toRadians(hourAngle.toDouble())
-                    val minuteRad = Math.toRadians(minuteAngle.toDouble())
-                    drawLine(
-                        color = Color(0xFF18181B),
-                        start = center,
-                        end = Offset(
-                            center.x + kotlin.math.cos(hourRad).toFloat() * radius * 0.48f,
-                            center.y + kotlin.math.sin(hourRad).toFloat() * radius * 0.48f
-                        ),
-                        strokeWidth = 6.dp.toPx(),
-                        cap = androidx.compose.ui.graphics.StrokeCap.Round
-                    )
-                    drawLine(
-                        color = accent,
-                        start = center,
-                        end = Offset(
-                            center.x + kotlin.math.cos(minuteRad).toFloat() * radius * 0.70f,
-                            center.y + kotlin.math.sin(minuteRad).toFloat() * radius * 0.70f
-                        ),
-                        strokeWidth = 4.dp.toPx(),
-                        cap = androidx.compose.ui.graphics.StrokeCap.Round
-                    )
-                    drawCircle(color = accent, radius = 6.dp.toPx(), center = center)
+                    Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                        Text(
+                            text = "TIME LEFT",
+                            color = muted,
+                            fontSize = 11.sp,
+                            fontWeight = FontWeight.Bold,
+                            letterSpacing = 1.2.sp,
+                            fontFamily = Poppins
+                        )
+                        Spacer(Modifier.height(6.dp))
+                        Text(
+                            text = countdown,
+                            color = if (remaining <= 60_000L) Color(0xFFEF4444) else textColor,
+                            fontSize = 29.sp,
+                            fontWeight = FontWeight.Bold,
+                            fontFamily = Poppins
+                        )
+                    }
                 }
-                Spacer(Modifier.height(14.dp))
+
+                Spacer(Modifier.height(20.dp))
                 Text(
-                    "${formatDuration(remaining)} left", color = accent,
-                    fontSize = 18.sp, fontWeight = FontWeight.Bold, fontFamily = Poppins
+                    text = "BLOCK ENDS",
+                    color = muted,
+                    fontSize = 11.sp,
+                    fontWeight = FontWeight.Bold,
+                    letterSpacing = 1.2.sp,
+                    fontFamily = Poppins
                 )
-                Spacer(Modifier.height(6.dp))
+                Spacer(Modifier.height(5.dp))
                 Text(
-                    "This app stays blocked until the time above.",
-                    color = Color(0xFF52525B), fontSize = 13.sp, fontFamily = Poppins,
+                    text = formatTime(endMillis),
+                    color = textColor,
+                    fontSize = 25.sp,
+                    fontWeight = FontWeight.Bold,
+                    fontFamily = Poppins
+                )
+                Text(
+                    text = formatDate(endMillis),
+                    color = muted,
+                    fontSize = 13.sp,
+                    fontFamily = Poppins
+                )
+                Spacer(Modifier.height(12.dp))
+                Text(
+                    text = "This app stays blocked until the countdown ends.",
+                    color = Color(0xFF52525B),
+                    fontSize = 13.sp,
+                    fontFamily = Poppins,
                     textAlign = TextAlign.Center
                 )
-                Spacer(Modifier.height(18.dp))
+                Spacer(Modifier.height(20.dp))
                 Button(
                     onClick = onDismiss,
                     shape = RoundedCornerShape(14.dp),
-                    colors = ButtonDefaults.buttonColors(containerColor = accent)
+                    colors = ButtonDefaults.buttonColors(containerColor = accent),
+                    modifier = Modifier.fillMaxWidth()
                 ) {
-                    Text("Got it", color = Color.White, fontWeight = FontWeight.SemiBold, fontFamily = Poppins)
+                    Text(
+                        text = "Got it",
+                        color = Color.White,
+                        fontWeight = FontWeight.SemiBold,
+                        fontFamily = Poppins
+                    )
                 }
             }
         }
     }
+}
+
+private fun formatCountdownHms(milliseconds: Long): String {
+    val totalSeconds = milliseconds.coerceAtLeast(0L) / 1000L
+    val hours = totalSeconds / 3600L
+    val minutes = (totalSeconds % 3600L) / 60L
+    val seconds = totalSeconds % 60L
+    return String.format(Locale.getDefault(), "%02d:%02d:%02d", hours, minutes, seconds)
 }
 
 @Composable
