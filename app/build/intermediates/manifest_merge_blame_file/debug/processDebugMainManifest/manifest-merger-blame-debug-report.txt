@@ -1,0 +1,222 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.strictfocus"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="35" />
+10
+11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+11-->C:\Users\ShriSudhanBoobathi\Downloads\StrictFocus_icon_named_icon\StrictFocus\app\src\main\AndroidManifest.xml:2:5-77
+11-->C:\Users\ShriSudhanBoobathi\Downloads\StrictFocus_icon_named_icon\StrictFocus\app\src\main\AndroidManifest.xml:2:22-75
+12    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" />
+12-->C:\Users\ShriSudhanBoobathi\Downloads\StrictFocus_icon_named_icon\StrictFocus\app\src\main\AndroidManifest.xml:3:5-160
+12-->C:\Users\ShriSudhanBoobathi\Downloads\StrictFocus_icon_named_icon\StrictFocus\app\src\main\AndroidManifest.xml:3:22-75
+13    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+13-->C:\Users\ShriSudhanBoobathi\Downloads\StrictFocus_icon_named_icon\StrictFocus\app\src\main\AndroidManifest.xml:4:5-80
+13-->C:\Users\ShriSudhanBoobathi\Downloads\StrictFocus_icon_named_icon\StrictFocus\app\src\main\AndroidManifest.xml:4:22-78
+14    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+14-->C:\Users\ShriSudhanBoobathi\Downloads\StrictFocus_icon_named_icon\StrictFocus\app\src\main\AndroidManifest.xml:5:5-76
+14-->C:\Users\ShriSudhanBoobathi\Downloads\StrictFocus_icon_named_icon\StrictFocus\app\src\main\AndroidManifest.xml:5:22-74
+15    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+15-->C:\Users\ShriSudhanBoobathi\Downloads\StrictFocus_icon_named_icon\StrictFocus\app\src\main\AndroidManifest.xml:6:5-88
+15-->C:\Users\ShriSudhanBoobathi\Downloads\StrictFocus_icon_named_icon\StrictFocus\app\src\main\AndroidManifest.xml:6:22-86
+16    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+16-->C:\Users\ShriSudhanBoobathi\Downloads\StrictFocus_icon_named_icon\StrictFocus\app\src\main\AndroidManifest.xml:7:5-76
+16-->C:\Users\ShriSudhanBoobathi\Downloads\StrictFocus_icon_named_icon\StrictFocus\app\src\main\AndroidManifest.xml:7:22-74
+17    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
+17-->C:\Users\ShriSudhanBoobathi\Downloads\StrictFocus_icon_named_icon\StrictFocus\app\src\main\AndroidManifest.xml:8:5-165
+17-->C:\Users\ShriSudhanBoobathi\Downloads\StrictFocus_icon_named_icon\StrictFocus\app\src\main\AndroidManifest.xml:8:22-74
+18
+19    <permission
+19-->[androidx.core:core:1.16.0] C:\Users\ShriSudhanBoobathi\.gradle\caches\9.3.0\transforms\d5518a041327de3b4354e8822637c64a\workspace\transformed\core-1.16.0\AndroidManifest.xml:22:5-24:47
+20        android:name="com.strictfocus.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+20-->[androidx.core:core:1.16.0] C:\Users\ShriSudhanBoobathi\.gradle\caches\9.3.0\transforms\d5518a041327de3b4354e8822637c64a\workspace\transformed\core-1.16.0\AndroidManifest.xml:23:9-81
+21        android:protectionLevel="signature" />
+21-->[androidx.core:core:1.16.0] C:\Users\ShriSudhanBoobathi\.gradle\caches\9.3.0\transforms\d5518a041327de3b4354e8822637c64a\workspace\transformed\core-1.16.0\AndroidManifest.xml:24:9-44
+22
+23    <uses-permission android:name="com.strictfocus.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+23-->[androidx.core:core:1.16.0] C:\Users\ShriSudhanBoobathi\.gradle\caches\9.3.0\transforms\d5518a041327de3b4354e8822637c64a\workspace\transformed\core-1.16.0\AndroidManifest.xml:26:5-97
+23-->[androidx.core:core:1.16.0] C:\Users\ShriSudhanBoobathi\.gradle\caches\9.3.0\transforms\d5518a041327de3b4354e8822637c64a\workspace\transformed\core-1.16.0\AndroidManifest.xml:26:22-94
+24
+25    <application
+25-->C:\Users\ShriSudhanBoobathi\Downloads\StrictFocus_icon_named_icon\StrictFocus\app\src\main\AndroidManifest.xml:9:5-27:19
+26        android:allowBackup="false"
+26-->C:\Users\ShriSudhanBoobathi\Downloads\StrictFocus_icon_named_icon\StrictFocus\app\src\main\AndroidManifest.xml:9:177-204
+27        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+27-->[androidx.core:core:1.16.0] C:\Users\ShriSudhanBoobathi\.gradle\caches\9.3.0\transforms\d5518a041327de3b4354e8822637c64a\workspace\transformed\core-1.16.0\AndroidManifest.xml:28:18-86
+28        android:debuggable="true"
+29        android:extractNativeLibs="false"
+30        android:icon="@mipmap/icon"
+30-->C:\Users\ShriSudhanBoobathi\Downloads\StrictFocus_icon_named_icon\StrictFocus\app\src\main\AndroidManifest.xml:9:46-73
+31        android:label="StrictFocus"
+31-->C:\Users\ShriSudhanBoobathi\Downloads\StrictFocus_icon_named_icon\StrictFocus\app\src\main\AndroidManifest.xml:9:18-45
+32        android:roundIcon="@mipmap/icon_round"
+32-->C:\Users\ShriSudhanBoobathi\Downloads\StrictFocus_icon_named_icon\StrictFocus\app\src\main\AndroidManifest.xml:9:74-112
+33        android:testOnly="true"
+34        android:theme="@android:style/Theme.Material.Light.NoActionBar" >
+34-->C:\Users\ShriSudhanBoobathi\Downloads\StrictFocus_icon_named_icon\StrictFocus\app\src\main\AndroidManifest.xml:9:113-176
+35        <activity
+35-->C:\Users\ShriSudhanBoobathi\Downloads\StrictFocus_icon_named_icon\StrictFocus\app\src\main\AndroidManifest.xml:10:9-115
+36            android:name="com.strictfocus.StrictBlockActivity"
+36-->C:\Users\ShriSudhanBoobathi\Downloads\StrictFocus_icon_named_icon\StrictFocus\app\src\main\AndroidManifest.xml:10:19-54
+37            android:excludeFromRecents="true"
+37-->C:\Users\ShriSudhanBoobathi\Downloads\StrictFocus_icon_named_icon\StrictFocus\app\src\main\AndroidManifest.xml:10:80-113
+38            android:exported="false" />
+38-->C:\Users\ShriSudhanBoobathi\Downloads\StrictFocus_icon_named_icon\StrictFocus\app\src\main\AndroidManifest.xml:10:55-79
+39        <activity
+39-->C:\Users\ShriSudhanBoobathi\Downloads\StrictFocus_icon_named_icon\StrictFocus\app\src\main\AndroidManifest.xml:11:9-13:20
+40            android:name="com.strictfocus.MainActivity"
+40-->C:\Users\ShriSudhanBoobathi\Downloads\StrictFocus_icon_named_icon\StrictFocus\app\src\main\AndroidManifest.xml:11:19-47
+41            android:exported="true" >
+41-->C:\Users\ShriSudhanBoobathi\Downloads\StrictFocus_icon_named_icon\StrictFocus\app\src\main\AndroidManifest.xml:11:48-71
+42            <intent-filter>
+42-->C:\Users\ShriSudhanBoobathi\Downloads\StrictFocus_icon_named_icon\StrictFocus\app\src\main\AndroidManifest.xml:12:13-154
+43                <action android:name="android.intent.action.MAIN" />
+43-->C:\Users\ShriSudhanBoobathi\Downloads\StrictFocus_icon_named_icon\StrictFocus\app\src\main\AndroidManifest.xml:12:28-79
+43-->C:\Users\ShriSudhanBoobathi\Downloads\StrictFocus_icon_named_icon\StrictFocus\app\src\main\AndroidManifest.xml:12:36-77
+44
+45                <category android:name="android.intent.category.LAUNCHER" />
+45-->C:\Users\ShriSudhanBoobathi\Downloads\StrictFocus_icon_named_icon\StrictFocus\app\src\main\AndroidManifest.xml:12:79-138
+45-->C:\Users\ShriSudhanBoobathi\Downloads\StrictFocus_icon_named_icon\StrictFocus\app\src\main\AndroidManifest.xml:12:89-136
+46            </intent-filter>
+47        </activity>
+48
+49        <service
+49-->C:\Users\ShriSudhanBoobathi\Downloads\StrictFocus_icon_named_icon\StrictFocus\app\src\main\AndroidManifest.xml:14:9-19:19
+50            android:name="com.strictfocus.StrictFocusAccessibilityService"
+50-->C:\Users\ShriSudhanBoobathi\Downloads\StrictFocus_icon_named_icon\StrictFocus\app\src\main\AndroidManifest.xml:14:18-65
+51            android:exported="true"
+51-->C:\Users\ShriSudhanBoobathi\Downloads\StrictFocus_icon_named_icon\StrictFocus\app\src\main\AndroidManifest.xml:16:13-36
+52            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" >
+52-->C:\Users\ShriSudhanBoobathi\Downloads\StrictFocus_icon_named_icon\StrictFocus\app\src\main\AndroidManifest.xml:15:13-79
+53            <intent-filter>
+53-->C:\Users\ShriSudhanBoobathi\Downloads\StrictFocus_icon_named_icon\StrictFocus\app\src\main\AndroidManifest.xml:17:13-118
+54                <action android:name="android.accessibilityservice.AccessibilityService" />
+54-->C:\Users\ShriSudhanBoobathi\Downloads\StrictFocus_icon_named_icon\StrictFocus\app\src\main\AndroidManifest.xml:17:28-102
+54-->C:\Users\ShriSudhanBoobathi\Downloads\StrictFocus_icon_named_icon\StrictFocus\app\src\main\AndroidManifest.xml:17:36-100
+55            </intent-filter>
+56
+57            <meta-data
+57-->C:\Users\ShriSudhanBoobathi\Downloads\StrictFocus_icon_named_icon\StrictFocus\app\src\main\AndroidManifest.xml:18:13-122
+58                android:name="android.accessibilityservice"
+58-->C:\Users\ShriSudhanBoobathi\Downloads\StrictFocus_icon_named_icon\StrictFocus\app\src\main\AndroidManifest.xml:18:24-67
+59                android:resource="@xml/accessibility_service_config" />
+59-->C:\Users\ShriSudhanBoobathi\Downloads\StrictFocus_icon_named_icon\StrictFocus\app\src\main\AndroidManifest.xml:18:68-120
+60        </service>
+61
+62        <receiver
+62-->C:\Users\ShriSudhanBoobathi\Downloads\StrictFocus_icon_named_icon\StrictFocus\app\src\main\AndroidManifest.xml:20:9-23:20
+63            android:name="com.strictfocus.FocusDeviceAdminReceiver"
+63-->C:\Users\ShriSudhanBoobathi\Downloads\StrictFocus_icon_named_icon\StrictFocus\app\src\main\AndroidManifest.xml:20:19-59
+64            android:exported="true"
+64-->C:\Users\ShriSudhanBoobathi\Downloads\StrictFocus_icon_named_icon\StrictFocus\app\src\main\AndroidManifest.xml:20:118-141
+65            android:permission="android.permission.BIND_DEVICE_ADMIN" >
+65-->C:\Users\ShriSudhanBoobathi\Downloads\StrictFocus_icon_named_icon\StrictFocus\app\src\main\AndroidManifest.xml:20:60-117
+66            <meta-data
+66-->C:\Users\ShriSudhanBoobathi\Downloads\StrictFocus_icon_named_icon\StrictFocus\app\src\main\AndroidManifest.xml:21:13-109
+67                android:name="android.app.device_admin"
+67-->C:\Users\ShriSudhanBoobathi\Downloads\StrictFocus_icon_named_icon\StrictFocus\app\src\main\AndroidManifest.xml:21:24-63
+68                android:resource="@xml/device_admin_config" />
+68-->C:\Users\ShriSudhanBoobathi\Downloads\StrictFocus_icon_named_icon\StrictFocus\app\src\main\AndroidManifest.xml:21:64-107
+69
+70            <intent-filter>
+70-->C:\Users\ShriSudhanBoobathi\Downloads\StrictFocus_icon_named_icon\StrictFocus\app\src\main\AndroidManifest.xml:22:13-108
+71                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+71-->C:\Users\ShriSudhanBoobathi\Downloads\StrictFocus_icon_named_icon\StrictFocus\app\src\main\AndroidManifest.xml:22:28-92
+71-->C:\Users\ShriSudhanBoobathi\Downloads\StrictFocus_icon_named_icon\StrictFocus\app\src\main\AndroidManifest.xml:22:36-90
+72            </intent-filter>
+73        </receiver>
+74        <receiver
+74-->C:\Users\ShriSudhanBoobathi\Downloads\StrictFocus_icon_named_icon\StrictFocus\app\src\main\AndroidManifest.xml:24:9-26:20
+75            android:name="com.strictfocus.BootReceiver"
+75-->C:\Users\ShriSudhanBoobathi\Downloads\StrictFocus_icon_named_icon\StrictFocus\app\src\main\AndroidManifest.xml:24:19-47
+76            android:enabled="true"
+76-->C:\Users\ShriSudhanBoobathi\Downloads\StrictFocus_icon_named_icon\StrictFocus\app\src\main\AndroidManifest.xml:24:48-70
+77            android:exported="true" >
+77-->C:\Users\ShriSudhanBoobathi\Downloads\StrictFocus_icon_named_icon\StrictFocus\app\src\main\AndroidManifest.xml:24:71-94
+78            <intent-filter>
+78-->C:\Users\ShriSudhanBoobathi\Downloads\StrictFocus_icon_named_icon\StrictFocus\app\src\main\AndroidManifest.xml:25:13-105
+79                <action android:name="android.intent.action.BOOT_COMPLETED" />
+79-->C:\Users\ShriSudhanBoobathi\Downloads\StrictFocus_icon_named_icon\StrictFocus\app\src\main\AndroidManifest.xml:25:28-89
+79-->C:\Users\ShriSudhanBoobathi\Downloads\StrictFocus_icon_named_icon\StrictFocus\app\src\main\AndroidManifest.xml:25:36-87
+80            </intent-filter>
+81        </receiver>
+82
+83        <activity
+83-->[androidx.compose.ui:ui-tooling-android:1.8.2] C:\Users\ShriSudhanBoobathi\.gradle\caches\9.3.0\transforms\0a5f20126ddd32b5cba9867fa0be973b\workspace\transformed\ui-tooling-release\AndroidManifest.xml:23:9-25:39
+84            android:name="androidx.compose.ui.tooling.PreviewActivity"
+84-->[androidx.compose.ui:ui-tooling-android:1.8.2] C:\Users\ShriSudhanBoobathi\.gradle\caches\9.3.0\transforms\0a5f20126ddd32b5cba9867fa0be973b\workspace\transformed\ui-tooling-release\AndroidManifest.xml:24:13-71
+85            android:exported="true" />
+85-->[androidx.compose.ui:ui-tooling-android:1.8.2] C:\Users\ShriSudhanBoobathi\.gradle\caches\9.3.0\transforms\0a5f20126ddd32b5cba9867fa0be973b\workspace\transformed\ui-tooling-release\AndroidManifest.xml:25:13-36
+86
+87        <provider
+87-->[androidx.emoji2:emoji2:1.4.0] C:\Users\ShriSudhanBoobathi\.gradle\caches\9.3.0\transforms\c377a966bb1167bf926df4d9c50a3fe2\workspace\transformed\emoji2-1.4.0\AndroidManifest.xml:24:9-32:20
+88            android:name="androidx.startup.InitializationProvider"
+88-->[androidx.emoji2:emoji2:1.4.0] C:\Users\ShriSudhanBoobathi\.gradle\caches\9.3.0\transforms\c377a966bb1167bf926df4d9c50a3fe2\workspace\transformed\emoji2-1.4.0\AndroidManifest.xml:25:13-67
+89            android:authorities="com.strictfocus.androidx-startup"
+89-->[androidx.emoji2:emoji2:1.4.0] C:\Users\ShriSudhanBoobathi\.gradle\caches\9.3.0\transforms\c377a966bb1167bf926df4d9c50a3fe2\workspace\transformed\emoji2-1.4.0\AndroidManifest.xml:26:13-68
+90            android:exported="false" >
+90-->[androidx.emoji2:emoji2:1.4.0] C:\Users\ShriSudhanBoobathi\.gradle\caches\9.3.0\transforms\c377a966bb1167bf926df4d9c50a3fe2\workspace\transformed\emoji2-1.4.0\AndroidManifest.xml:27:13-37
+91            <meta-data
+91-->[androidx.emoji2:emoji2:1.4.0] C:\Users\ShriSudhanBoobathi\.gradle\caches\9.3.0\transforms\c377a966bb1167bf926df4d9c50a3fe2\workspace\transformed\emoji2-1.4.0\AndroidManifest.xml:29:13-31:52
+92                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+92-->[androidx.emoji2:emoji2:1.4.0] C:\Users\ShriSudhanBoobathi\.gradle\caches\9.3.0\transforms\c377a966bb1167bf926df4d9c50a3fe2\workspace\transformed\emoji2-1.4.0\AndroidManifest.xml:30:17-75
+93                android:value="androidx.startup" />
+93-->[androidx.emoji2:emoji2:1.4.0] C:\Users\ShriSudhanBoobathi\.gradle\caches\9.3.0\transforms\c377a966bb1167bf926df4d9c50a3fe2\workspace\transformed\emoji2-1.4.0\AndroidManifest.xml:31:17-49
+94            <meta-data
+94-->[androidx.lifecycle:lifecycle-process:2.9.1] C:\Users\ShriSudhanBoobathi\.gradle\caches\9.3.0\transforms\24147581092d596858bb511f0c85dd90\workspace\transformed\lifecycle-process-2.9.1\AndroidManifest.xml:29:13-31:52
+95                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+95-->[androidx.lifecycle:lifecycle-process:2.9.1] C:\Users\ShriSudhanBoobathi\.gradle\caches\9.3.0\transforms\24147581092d596858bb511f0c85dd90\workspace\transformed\lifecycle-process-2.9.1\AndroidManifest.xml:30:17-78
+96                android:value="androidx.startup" />
+96-->[androidx.lifecycle:lifecycle-process:2.9.1] C:\Users\ShriSudhanBoobathi\.gradle\caches\9.3.0\transforms\24147581092d596858bb511f0c85dd90\workspace\transformed\lifecycle-process-2.9.1\AndroidManifest.xml:31:17-49
+97            <meta-data
+97-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ShriSudhanBoobathi\.gradle\caches\9.3.0\transforms\90bd1d371682773e3f5f81a1ca22db06\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
+98                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+98-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ShriSudhanBoobathi\.gradle\caches\9.3.0\transforms\90bd1d371682773e3f5f81a1ca22db06\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
+99                android:value="androidx.startup" />
+99-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ShriSudhanBoobathi\.gradle\caches\9.3.0\transforms\90bd1d371682773e3f5f81a1ca22db06\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
+100        </provider>
+101
+102        <receiver
+102-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ShriSudhanBoobathi\.gradle\caches\9.3.0\transforms\90bd1d371682773e3f5f81a1ca22db06\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
+103            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+103-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ShriSudhanBoobathi\.gradle\caches\9.3.0\transforms\90bd1d371682773e3f5f81a1ca22db06\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
+104            android:directBootAware="false"
+104-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ShriSudhanBoobathi\.gradle\caches\9.3.0\transforms\90bd1d371682773e3f5f81a1ca22db06\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
+105            android:enabled="true"
+105-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ShriSudhanBoobathi\.gradle\caches\9.3.0\transforms\90bd1d371682773e3f5f81a1ca22db06\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
+106            android:exported="true"
+106-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ShriSudhanBoobathi\.gradle\caches\9.3.0\transforms\90bd1d371682773e3f5f81a1ca22db06\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
+107            android:permission="android.permission.DUMP" >
+107-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ShriSudhanBoobathi\.gradle\caches\9.3.0\transforms\90bd1d371682773e3f5f81a1ca22db06\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
+108            <intent-filter>
+108-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ShriSudhanBoobathi\.gradle\caches\9.3.0\transforms\90bd1d371682773e3f5f81a1ca22db06\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
+109                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+109-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ShriSudhanBoobathi\.gradle\caches\9.3.0\transforms\90bd1d371682773e3f5f81a1ca22db06\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
+109-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ShriSudhanBoobathi\.gradle\caches\9.3.0\transforms\90bd1d371682773e3f5f81a1ca22db06\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
+110            </intent-filter>
+111            <intent-filter>
+111-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ShriSudhanBoobathi\.gradle\caches\9.3.0\transforms\90bd1d371682773e3f5f81a1ca22db06\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
+112                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+112-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ShriSudhanBoobathi\.gradle\caches\9.3.0\transforms\90bd1d371682773e3f5f81a1ca22db06\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
+112-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ShriSudhanBoobathi\.gradle\caches\9.3.0\transforms\90bd1d371682773e3f5f81a1ca22db06\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
+113            </intent-filter>
+114            <intent-filter>
+114-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ShriSudhanBoobathi\.gradle\caches\9.3.0\transforms\90bd1d371682773e3f5f81a1ca22db06\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
+115                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+115-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ShriSudhanBoobathi\.gradle\caches\9.3.0\transforms\90bd1d371682773e3f5f81a1ca22db06\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
+115-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ShriSudhanBoobathi\.gradle\caches\9.3.0\transforms\90bd1d371682773e3f5f81a1ca22db06\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
+116            </intent-filter>
+117            <intent-filter>
+117-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ShriSudhanBoobathi\.gradle\caches\9.3.0\transforms\90bd1d371682773e3f5f81a1ca22db06\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
+118                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+118-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ShriSudhanBoobathi\.gradle\caches\9.3.0\transforms\90bd1d371682773e3f5f81a1ca22db06\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
+118-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ShriSudhanBoobathi\.gradle\caches\9.3.0\transforms\90bd1d371682773e3f5f81a1ca22db06\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
+119            </intent-filter>
+120        </receiver>
+121    </application>
+122
+123</manifest>

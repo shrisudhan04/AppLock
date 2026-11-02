@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">StrictFocus</string>
+    <string name="accessibility_description">StrictFocus detects selected apps to help enforce a user-started focus session.</string>
+</resources>

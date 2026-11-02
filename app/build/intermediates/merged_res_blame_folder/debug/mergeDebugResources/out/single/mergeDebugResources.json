@@ -1,0 +1,130 @@
+[
+    {
+        "merged": "C:\\Users\\ShriSudhanBoobathi\\.gradle\\daemon\\9.3.0\\com.strictfocus.app-debug-51:\\xml_device_admin_config.xml.flat",
+        "source": "C:\\Users\\ShriSudhanBoobathi\\.gradle\\daemon\\9.3.0\\com.strictfocus.app-main-53:\\xml\\device_admin_config.xml"
+    },
+    {
+        "merged": "C:\\Users\\ShriSudhanBoobathi\\.gradle\\daemon\\9.3.0\\com.strictfocus.app-debug-51:\\font_poppins_medium.ttf.flat",
+        "source": "C:\\Users\\ShriSudhanBoobathi\\.gradle\\daemon\\9.3.0\\com.strictfocus.app-main-53:\\font\\poppins_medium.ttf"
+    },
+    {
+        "merged": "C:\\Users\\ShriSudhanBoobathi\\.gradle\\daemon\\9.3.0\\com.strictfocus.app-debug-51:\\font_poppins_bold.ttf.flat",
+        "source": "C:\\Users\\ShriSudhanBoobathi\\.gradle\\daemon\\9.3.0\\com.strictfocus.app-main-53:\\font\\poppins_bold.ttf"
+    },
+    {
+        "merged": "C:\\Users\\ShriSudhanBoobathi\\.gradle\\daemon\\9.3.0\\com.strictfocus.app-debug-51:\\mipmap-hdpi_icon_round.png.flat",
+        "source": "C:\\Users\\ShriSudhanBoobathi\\.gradle\\daemon\\9.3.0\\com.strictfocus.app-main-53:\\mipmap-hdpi\\icon_round.png"
+    },
+    {
+        "merged": "C:\\Users\\ShriSudhanBoobathi\\.gradle\\daemon\\9.3.0\\com.strictfocus.app-debug-51:\\font_poppins_thinitalic.ttf.flat",
+        "source": "C:\\Users\\ShriSudhanBoobathi\\.gradle\\daemon\\9.3.0\\com.strictfocus.app-main-53:\\font\\poppins_thinitalic.ttf"
+    },
+    {
+        "merged": "C:\\Users\\ShriSudhanBoobathi\\.gradle\\daemon\\9.3.0\\com.strictfocus.app-debug-51:\\mipmap-xxhdpi_icon_round.png.flat",
+        "source": "C:\\Users\\ShriSudhanBoobathi\\.gradle\\daemon\\9.3.0\\com.strictfocus.app-main-53:\\mipmap-xxhdpi\\icon_round.png"
+    },
+    {
+        "merged": "C:\\Users\\ShriSudhanBoobathi\\.gradle\\daemon\\9.3.0\\com.strictfocus.app-debug-51:\\font_poppins_italic.ttf.flat",
+        "source": "C:\\Users\\ShriSudhanBoobathi\\.gradle\\daemon\\9.3.0\\com.strictfocus.app-main-53:\\font\\poppins_italic.ttf"
+    },
+    {
+        "merged": "C:\\Users\\ShriSudhanBoobathi\\.gradle\\daemon\\9.3.0\\com.strictfocus.app-debug-51:\\mipmap-xhdpi_icon_round.png.flat",
+        "source": "C:\\Users\\ShriSudhanBoobathi\\.gradle\\daemon\\9.3.0\\com.strictfocus.app-main-53:\\mipmap-xhdpi\\icon_round.png"
+    },
+    {
+        "merged": "C:\\Users\\ShriSudhanBoobathi\\.gradle\\daemon\\9.3.0\\com.strictfocus.app-debug-51:\\mipmap-xxxhdpi_icon_round.jpg.flat",
+        "source": "C:\\Users\\ShriSudhanBoobathi\\.gradle\\daemon\\9.3.0\\com.strictfocus.app-main-53:\\mipmap-xxxhdpi\\icon_round.jpg"
+    },
+    {
+        "merged": "C:\\Users\\ShriSudhanBoobathi\\.gradle\\daemon\\9.3.0\\com.strictfocus.app-debug-51:\\font_poppins_black.ttf.flat",
+        "source": "C:\\Users\\ShriSudhanBoobathi\\.gradle\\daemon\\9.3.0\\com.strictfocus.app-main-53:\\font\\poppins_black.ttf"
+    },
+    {
+        "merged": "C:\\Users\\ShriSudhanBoobathi\\.gradle\\daemon\\9.3.0\\com.strictfocus.app-debug-51:\\font_poppins_lightitalic.ttf.flat",
+        "source": "C:\\Users\\ShriSudhanBoobathi\\.gradle\\daemon\\9.3.0\\com.strictfocus.app-main-53:\\font\\poppins_lightitalic.ttf"
+    },
+    {
+        "merged": "C:\\Users\\ShriSudhanBoobathi\\.gradle\\daemon\\9.3.0\\com.strictfocus.app-debug-51:\\mipmap-xxxhdpi_icon.jpg.flat",
+        "source": "C:\\Users\\ShriSudhanBoobathi\\.gradle\\daemon\\9.3.0\\com.strictfocus.app-main-53:\\mipmap-xxxhdpi\\icon.jpg"
+    },
+    {
+        "merged": "C:\\Users\\ShriSudhanBoobathi\\.gradle\\daemon\\9.3.0\\com.strictfocus.app-debug-51:\\font_poppins_semibolditalic.ttf.flat",
+        "source": "C:\\Users\\ShriSudhanBoobathi\\.gradle\\daemon\\9.3.0\\com.strictfocus.app-main-53:\\font\\poppins_semibolditalic.ttf"
+    },
+    {
+        "merged": "C:\\Users\\ShriSudhanBoobathi\\.gradle\\daemon\\9.3.0\\com.strictfocus.app-debug-51:\\font_poppins_extrabolditalic.ttf.flat",
+        "source": "C:\\Users\\ShriSudhanBoobathi\\.gradle\\daemon\\9.3.0\\com.strictfocus.app-main-53:\\font\\poppins_extrabolditalic.ttf"
+    },
+    {
+        "merged": "C:\\Users\\ShriSudhanBoobathi\\.gradle\\daemon\\9.3.0\\com.strictfocus.app-debug-51:\\font_poppins_extralight.ttf.flat",
+        "source": "C:\\Users\\ShriSudhanBoobathi\\.gradle\\daemon\\9.3.0\\com.strictfocus.app-main-53:\\font\\poppins_extralight.ttf"
+    },
+    {
+        "merged": "com.strictfocus.app-debug-51:/mipmap-xxxhdpi_icon_round.jpg.flat",
+        "source": "com.strictfocus.app-main-53:/mipmap-xxxhdpi/icon_round.jpg"
+    },
+    {
+        "merged": "C:\\Users\\ShriSudhanBoobathi\\.gradle\\daemon\\9.3.0\\com.strictfocus.app-debug-51:\\mipmap-hdpi_icon.png.flat",
+        "source": "C:\\Users\\ShriSudhanBoobathi\\.gradle\\daemon\\9.3.0\\com.strictfocus.app-main-53:\\mipmap-hdpi\\icon.png"
+    },
+    {
+        "merged": "C:\\Users\\ShriSudhanBoobathi\\.gradle\\daemon\\9.3.0\\com.strictfocus.app-debug-51:\\mipmap-xxhdpi_icon.png.flat",
+        "source": "C:\\Users\\ShriSudhanBoobathi\\.gradle\\daemon\\9.3.0\\com.strictfocus.app-main-53:\\mipmap-xxhdpi\\icon.png"
+    },
+    {
+        "merged": "C:\\Users\\ShriSudhanBoobathi\\.gradle\\daemon\\9.3.0\\com.strictfocus.app-debug-51:\\font_poppins_bolditalic.ttf.flat",
+        "source": "C:\\Users\\ShriSudhanBoobathi\\.gradle\\daemon\\9.3.0\\com.strictfocus.app-main-53:\\font\\poppins_bolditalic.ttf"
+    },
+    {
+        "merged": "C:\\Users\\ShriSudhanBoobathi\\.gradle\\daemon\\9.3.0\\com.strictfocus.app-debug-51:\\font_poppins_blackitalic.ttf.flat",
+        "source": "C:\\Users\\ShriSudhanBoobathi\\.gradle\\daemon\\9.3.0\\com.strictfocus.app-main-53:\\font\\poppins_blackitalic.ttf"
+    },
+    {
+        "merged": "C:\\Users\\ShriSudhanBoobathi\\.gradle\\daemon\\9.3.0\\com.strictfocus.app-debug-51:\\mipmap-xhdpi_icon.png.flat",
+        "source": "C:\\Users\\ShriSudhanBoobathi\\.gradle\\daemon\\9.3.0\\com.strictfocus.app-main-53:\\mipmap-xhdpi\\icon.png"
+    },
+    {
+        "merged": "C:\\Users\\ShriSudhanBoobathi\\.gradle\\daemon\\9.3.0\\com.strictfocus.app-debug-51:\\font_poppins_mediumitalic.ttf.flat",
+        "source": "C:\\Users\\ShriSudhanBoobathi\\.gradle\\daemon\\9.3.0\\com.strictfocus.app-main-53:\\font\\poppins_mediumitalic.ttf"
+    },
+    {
+        "merged": "C:\\Users\\ShriSudhanBoobathi\\.gradle\\daemon\\9.3.0\\com.strictfocus.app-debug-51:\\font_poppins_semibold.ttf.flat",
+        "source": "C:\\Users\\ShriSudhanBoobathi\\.gradle\\daemon\\9.3.0\\com.strictfocus.app-main-53:\\font\\poppins_semibold.ttf"
+    },
+    {
+        "merged": "C:\\Users\\ShriSudhanBoobathi\\.gradle\\daemon\\9.3.0\\com.strictfocus.app-debug-51:\\mipmap-mdpi_icon.png.flat",
+        "source": "C:\\Users\\ShriSudhanBoobathi\\.gradle\\daemon\\9.3.0\\com.strictfocus.app-main-53:\\mipmap-mdpi\\icon.png"
+    },
+    {
+        "merged": "C:\\Users\\ShriSudhanBoobathi\\.gradle\\daemon\\9.3.0\\com.strictfocus.app-debug-51:\\font_poppins_light.ttf.flat",
+        "source": "C:\\Users\\ShriSudhanBoobathi\\.gradle\\daemon\\9.3.0\\com.strictfocus.app-main-53:\\font\\poppins_light.ttf"
+    },
+    {
+        "merged": "C:\\Users\\ShriSudhanBoobathi\\.gradle\\daemon\\9.3.0\\com.strictfocus.app-debug-51:\\xml_accessibility_service_config.xml.flat",
+        "source": "C:\\Users\\ShriSudhanBoobathi\\.gradle\\daemon\\9.3.0\\com.strictfocus.app-main-53:\\xml\\accessibility_service_config.xml"
+    },
+    {
+        "merged": "C:\\Users\\ShriSudhanBoobathi\\.gradle\\daemon\\9.3.0\\com.strictfocus.app-debug-51:\\font_poppins_extralightitalic.ttf.flat",
+        "source": "C:\\Users\\ShriSudhanBoobathi\\.gradle\\daemon\\9.3.0\\com.strictfocus.app-main-53:\\font\\poppins_extralightitalic.ttf"
+    },
+    {
+        "merged": "C:\\Users\\ShriSudhanBoobathi\\.gradle\\daemon\\9.3.0\\com.strictfocus.app-debug-51:\\mipmap-mdpi_icon_round.png.flat",
+        "source": "C:\\Users\\ShriSudhanBoobathi\\.gradle\\daemon\\9.3.0\\com.strictfocus.app-main-53:\\mipmap-mdpi\\icon_round.png"
+    },
+    {
+        "merged": "C:\\Users\\ShriSudhanBoobathi\\.gradle\\daemon\\9.3.0\\com.strictfocus.app-debug-51:\\font_poppins_thin.ttf.flat",
+        "source": "C:\\Users\\ShriSudhanBoobathi\\.gradle\\daemon\\9.3.0\\com.strictfocus.app-main-53:\\font\\poppins_thin.ttf"
+    },
+    {
+        "merged": "com.strictfocus.app-debug-51:/mipmap-xxxhdpi_icon.jpg.flat",
+        "source": "com.strictfocus.app-main-53:/mipmap-xxxhdpi/icon.jpg"
+    },
+    {
+        "merged": "C:\\Users\\ShriSudhanBoobathi\\.gradle\\daemon\\9.3.0\\com.strictfocus.app-debug-51:\\font_poppins_regular.ttf.flat",
+        "source": "C:\\Users\\ShriSudhanBoobathi\\.gradle\\daemon\\9.3.0\\com.strictfocus.app-main-53:\\font\\poppins_regular.ttf"
+    },
+    {
+        "merged": "C:\\Users\\ShriSudhanBoobathi\\.gradle\\daemon\\9.3.0\\com.strictfocus.app-debug-51:\\font_poppins_extrabold.ttf.flat",
+        "source": "C:\\Users\\ShriSudhanBoobathi\\.gradle\\daemon\\9.3.0\\com.strictfocus.app-main-53:\\font\\poppins_extrabold.ttf"
+    }
+]
