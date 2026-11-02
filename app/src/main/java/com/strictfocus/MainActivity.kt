@@ -257,7 +257,9 @@ private fun Dashboard(
                 .getInstalledApplications(0)
                 .filter { appInfo ->
                     appInfo.packageName != context.packageName &&
-                            (appInfo.flags and ApplicationInfo.FLAG_SYSTEM == 0)
+                            ((appInfo.flags and ApplicationInfo.FLAG_SYSTEM == 0) ||
+                                    appInfo.packageName == "com.android.chrome" ||
+                                    appInfo.packageName == "com.android.vending")
                 }
                 .map { appInfo ->
                     InstalledApp(
